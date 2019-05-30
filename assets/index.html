@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>THE PSYCHIC GAME</title>
+</head>
+<body>
+    <h1>THE PSYCHIC GAME</h1> 
+    <h2>Wins: <span id="win">0</span></h2>
+    <h2>Losses: <span id="loss">0</span></h2>
+    <h2>Guesses left: <span id="GuessesLeft">10</span></h2>
+    <h2>Letters so far: <span id="LettersSoFar">_</span></h2>
+
+    
+    
+    <script type="text/javascript">
+        
+        var UserInput = []
+        var Answer = ["x"];
+        var win = document.getElementById("win");
+        var loss = document.getElementById("loss");
+        var LettersSoFar = document.getElementById("LettersSoFar");
+        var guessesLeft = document.getElementById("guessesLeft");
+        var w = 0;
+        var l = 0;
+        var gl = 0;
+        
+
+        document.onkeyup = function(event) {
+      var guess = event.key;
+        (guess);
+        if (guess === "x")
+        LettersSoFar.textContent = event.key;
+        
+        win.textContent = + 1;
+        }
+
+
+
+      </script>
+</body>
+</html>
