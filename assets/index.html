@@ -18,7 +18,7 @@
     <script type="text/javascript">
         
         var UserInput = []
-        var Answer = ["x"];
+        var Answer = ["a"];
         var win = document.getElementById("win");
         var loss = document.getElementById("loss");
         var LettersSoFar = document.getElementById("LettersSoFar");
@@ -26,19 +26,31 @@
         var w = 0;
         var l = 0;
         var gl = 0;
-        
+        var max_guess_count = 10;
+        var guess_count = 0
 
         document.onkeyup = function(event) {
-      var guess = event.key;
-        (guess);
-        if (guess === "x")
-        LettersSoFar.textContent = event.key;
-        
-        win.textContent = + 1;
-        }
+        var guess = event.key;
+        //(guess);
+        LettersSoFar.textContent += guess;
+        guess_count++;
+        GuessesLeft.textContent = max_guess_count - guess_count;
 
+        // if (guess === Answer[0]) 
+        // {
+        //     //thiscode
+        //     LettersSoFar.textContent = 'Correct';
+        // }
+        // else
+        // {
+        //     LettersSoFar.textContent = 'else statement';
+        // }
+        // for (var i = 0; i < Answer.length; i++) {
+        // console.log( Answer[i]);
 
-
+        // }
+        console.log(guess_count)
+    }
       </script>
 </body>
 </html>
