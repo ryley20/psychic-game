@@ -1,0 +1,24 @@
+make a header with the psychic game 
+
+get the wins, losses, and guesses down with a how many guessed button out of 10
+
+set an array for the letters you are going to use or letter
+
+find a way to make the wins go up when you click the correct letter 
+
+find a way to make the losses go up when you click the wrong one ten times
+
+actively have the letters guessed show up on the page and have the count down from 10 with every active letter guessed
+
+choose an answer
+
+make a guess
+
+check if the guess is correct
+
+repeat step 3 until the answer is guessed or you run out of guesses
+
+if the answer is guessed wins go up 1
+
+if the answer is not guessed within 10 tries losses go up 1
+
